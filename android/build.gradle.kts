@@ -1,21 +1,16 @@
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
+signingConfigs {
+    create("release") {
+        val keyProperties = java.util.Properties().apply {
+            load(FileInputStream(rootProject.file("app/key.properties")))
+        }
+        storeFile = file(keyProperties["storeFile"] as String)
+        storePassword = keyProperties["storePassword"] as String
+        keyAlias = keyProperties["keyAlias"] as String
+        keyPassword = keyProperties["keyPassword"] as String
     }
 }
-
-val newBuildDir: Directory = rootProject.layout.buildDirectory.dir("../../build").get()
-rootProject.layout.buildDirectory.value(newBuildDir)
-
-subprojects {
-    val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
-    project.layout.buildDirectory.value(newSubprojectBuildDir)
-}
-subprojects {
-    project.evaluationDependsOn(":app")
-}
-
-tasks.register<Delete>("clean") {
-    delete(rootProject.layout.buildDirectory)
+buildTypes {
+    release {
+        signingConfig = signingConfigs.getByName("release")
+    }
 }
