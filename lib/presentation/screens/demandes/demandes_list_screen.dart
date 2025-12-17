@@ -50,7 +50,7 @@ class _DemandesListScreenState extends State<DemandesListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: widget.filterStatusId == null
-          ? AppBar(title: const Text('Mes Demandes'))
+          ? AppBar(title: const Text(''))
           : null,
       body: Consumer<DemandeProvider>(
         builder: (context, demandeProvider, child) {

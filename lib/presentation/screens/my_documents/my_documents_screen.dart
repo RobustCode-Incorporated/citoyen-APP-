@@ -69,7 +69,7 @@ class _MyDocumentsScreenState extends State<MyDocumentsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mes Documents'),
+        title: const Text(''),
       ),
       body: Consumer<DemandeProvider>(
         builder: (context, demandeProvider, child) {

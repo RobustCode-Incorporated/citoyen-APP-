@@ -1,4 +1,4 @@
-package com.example.citoyen_app
+package com.robustcode.citoyen_app
 
 import io.flutter.embedding.android.FlutterActivity
 

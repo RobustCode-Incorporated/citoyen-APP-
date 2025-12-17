@@ -1,6 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.robustcode.citoyen_app">
     <application
-        android:label="E-Services RDC"
+        android:label="E-Services Beta"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

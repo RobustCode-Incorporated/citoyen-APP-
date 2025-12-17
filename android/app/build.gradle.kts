@@ -8,11 +8,11 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.robustcode.eservices_rdc"
+        applicationId "com.robustcode.citoyen_app"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0-beta"
     }
 
     signingConfigs {
