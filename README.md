@@ -58,7 +58,7 @@ cd ../mobile
 flutter pub get
 flutter run
  Captures d’écran
-<img width="2560" height="1440" alt="Screenshot 2025-10-13 at 18 33 12" src="https://github.com/user-attachments/assets/d2168861-8c6d-4a95-8a74-fe3c38782789" /># 3. Configurer la base de données
+3. Configurer la base de données
 cp .env.example .env
 # (modifier les variables selon votre configuration PostgreSQL)
 
@@ -74,3 +74,5 @@ npm run serve
 cd ../mobile
 flutter pub get
 flutter run
+ Captures d’écran
+<img width="2560" height="1440" alt="Screenshot 2025-10-13 at 18 33 12" src="https://github.com/user-attachments/assets/d2168861-8c6d-4a95-8a74-fe3c38782789" />
