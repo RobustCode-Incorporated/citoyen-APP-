@@ -1,16 +1,76 @@
-# citoyen_app
+🌍 e-Services
 
-A new Flutter project.
+📖 Introduction
 
-## Getting Started
+e-Services est une solution numérique mobile conçue pour faciliter la demande et la réception de documents administratifs.
+Initialement développée pour accompagner la digitalisation des services publics dans les pays africains, elle est désormais adaptée également aux entreprises et institutions disposant d’un processus interne de génération de documents (cartes de service, attestations, certificats, etc.).
 
-This project is a starting point for a Flutter application.
+Grâce à e-Services, les citoyens et employés peuvent effectuer leurs demandes de documents directement depuis une application mobile, suivre leur avancement en temps réel, et recevoir leurs documents générés automatiquement.
 
-A few resources to get you started if this is your first Flutter project:
+🎯 Objectifs du projet
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Simplifier les démarches administratives et réduire les files d’attente.
+Offrir aux institutions un outil moderne de gestion des demandes et de génération de documents.
+Promouvoir la digitalisation des services dans les pays en développement.
+Créer une passerelle entre le citoyen, l’administration et l’entreprise.
+📱 Fonctionnalités principales
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Création de compte : inscription sécurisée de l’utilisateur (citoyen ou employé).
+Dépôt de demandes : soumission des demandes de documents en ligne.
+Suivi du statut : consultation du niveau d’avancement (en cours, validé, rejeté).
+Notifications en temps réel : alertes sur la progression des demandes.
+Application mobile : disponible sur Android et iOS.
+Technologies utilisées
+
+Couche	Technologie
+Backend	Node.js / Express.js
+Frontend web (Admin)	Vue.js
+Mobile (Citoyen)	Flutter
+Base de données	PostgreSQL
+API	RESTful API sécurisée par JWT
+Architecture du projet  e-services/
+
+├── backend/ # API Node.js (Express) │ ├── routes/ │ ├── controllers/ │ ├── models/ │ └── config/ ├── frontend/ # Interface web (Vue.js) │ ├── src/ │ └── public/ ├── mobile/ # Application mobile Flutter │ ├── lib/ │ ├── android/ │ └── ios/ └── README.md  ---
+
+Installation & Lancement
+
+🔧 Prérequis
+
+Node.js >= 18
+PostgreSQL >= 14
+Flutter >= 3.0
+npm / yarn
+
+# 3. Configurer la base de données
+cp .env.example .env
+# (modifier les variables selon votre configuration PostgreSQL)
+
+# 4. Lancer le serveur backend
+npm start
+
+# 5. Lancer le frontend web (admin)
+cd ../frontend
+npm install
+npm run serve
+
+# 6. Lancer l'application mobile Flutter
+cd ../mobile
+flutter pub get
+flutter run
+ Captures d’écran
+<img width="2560" height="1440" alt="Screenshot 2025-10-13 at 18 33 12" src="https://github.com/user-attachments/assets/d2168861-8c6d-4a95-8a74-fe3c38782789" /># 3. Configurer la base de données
+cp .env.example .env
+# (modifier les variables selon votre configuration PostgreSQL)
+
+# 4. Lancer le serveur backend
+npm start
+
+# 5. Lancer le frontend web (admin)
+cd ../frontend
+npm install
+npm run serve
+
+# 6. Lancer l'application mobile Flutter
+cd ../mobile
+flutter pub get
+flutter run
